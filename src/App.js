@@ -1,64 +1,16 @@
 import { useState } from "react";
 import benepassLogo from "./benepassLogo.svg";
 import visa from './Visa.svg'
-
-const fullCardNumber = '1232 2223 4432 1732';
-const finalFourDigits = '1732';
-const cvc = '345';
-
-const Dot = () => <div className="dot" />
-
-const RepeatDot = ({ quantity }) => {
-  let body = [];
-  for (let x = 0; x < quantity; x += 1) {
-    body.push(<Dot />)
-  }
-  return <div className="flex">
-    {body}
-  </div>
-}
-
-const ShowDetailsText = ({ showDetails }) => {
-  if (showDetails) {
-    return <div class="font-bold text-benepass-red">
-      Show details
-    </div>
-  }
-  return <div class="font-light">
-    Show details
-  </div>
-
-}
-
-const CardNumber = ({ showDetails }) => {
-  if (showDetails) {
-    return <div class="card-number">{fullCardNumber}</div>
-  } else {
-    return <div class="card-number flex">
-      <div class="mt-3 max-sm:mt-2.5">
-        <RepeatDot quantity={4} />
-      </div>
-      <div className="ml-2">{finalFourDigits}</div>
-    </div>
-  }
-}
-
-const CardCVC = ({ showDetails }) => {
-  if (showDetails) {
-    return <div class="card-exp-label">{cvc}</div>
-  } else {
-    return <div class="mt-2 max-sm:mt-1"><RepeatDot quantity={3} /></div>
-  }
-}
-
+import ShowDetailsText from "./components/ShowDetailsText";
+import CardNumber from "./components/CardNumber";
+import CardCVC from "./components/CardCVC";
 
 export default function App() {
   const [showDetails, setShowDetails] = useState(false);
 
-
   return (
     <div className="ui-container">
-      <h1 class="text-xl font-semibold">Flex Card</h1>
+      <h1 class="main-header">Flex Card</h1>
       <h2 class="text-lg">Used for pre-tax purposes</h2>
       <div class="card">
         <div class="card-branding-container">
@@ -74,7 +26,6 @@ export default function App() {
         <CardNumber showDetails={showDetails} />
         <div class="card-security-container">
           <div class="flex space-x-12 max-sm:space-x-8 ">
-
             <div class="card-exp-container">
               <div class="card-exp-header">
                 VALID THRU
@@ -103,7 +54,6 @@ export default function App() {
             <img class="w-full flex mt-2" src={visa} alt="Visa Logo" />
           </div>
         </div>
-
       </div>
       <div class="checkbox-container">
         <div>
@@ -116,7 +66,6 @@ export default function App() {
         </div>
         <div class="mt-0.5">
           <ShowDetailsText showDetails={showDetails} />
-
         </div>
       </div>
     </div >
