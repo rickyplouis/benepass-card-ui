@@ -11,13 +11,13 @@ export default function App() {
         Used for pre-tax purposes
       </h2>
       <div class="card">
-        <div class="flex">
+        <div class="card-header-container">
           <div class="flex-1">
             <div class="card-logo">
               <img class="w-full flex" src={benepassLogo} alt="Benepass Logo" />
             </div>
           </div>
-          <div>
+          <div class="card-virual-badge-container">
             <div class="card-virtual-badge">
               Virtual
             </div>
