@@ -80,7 +80,7 @@ export default function App() {
                 CVC
               </div>
               <div class="card-exp-label">
-                <CardCVC quantity={3} />
+                <CardCVC quantity={3} showDetails={showDetails} />
               </div>
             </div>
           </div>
@@ -104,7 +104,7 @@ export default function App() {
           checked={showDetails}
           onChange={() => setShowDetails(!showDetails)}
         />
-        <div class="text-benepass-red font-medium">
+        <div class={`text-${showDetails ? 'benepass-red' : 'black'} font-medium`}>
           Show details
         </div>
       </div>
