@@ -1,5 +1,6 @@
 
 import benepassLogo from './benepassLogo.svg';
+import circle from './circle.svg'
 
 export default function App() {
   return (
@@ -22,9 +23,9 @@ export default function App() {
               Virtual
             </div>
           </div>
-
-
-
+        </div>
+        <div class="card-number">
+          * * * * 1732
         </div>
       </div>
     </div>

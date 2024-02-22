@@ -4,13 +4,16 @@
 
 @layer components {
   .card {
-    @apply bg-cover bg-center bg-[url('./cardBackground.png')] max-sm:w-72 w-96 max-sm:h-52 h-68 rounded-2xl;
+    @apply bg-cover bg-center bg-[url('./cardBackground.png')] max-sm:w-72 w-96 max-sm:h-52 h-68 rounded-2xl pl-6 max-sm:ml-4 max-sm:pt-4 pt-6 pr-6 max-sm:pr-5 max-sm:text-xs;
   }
   .card-logo {
-    @apply max-sm:w-24 w-32 max-sm:h-20 h-28 max-sm:pt-4 pt-6 max-sm:ml-4 ml-6;
+    @apply max-sm:w-24 w-32 max-sm:h-20 h-28;
   }
   .card-virtual-badge {
-    @apply text-black font-semibold mt-6 max-sm:mt-4 mr-6 max-sm:mr-5 bg-white px-4 max-sm:px-2 max-sm:py-1 py-1 rounded-2xl max-sm:text-xs;
+    @apply text-black font-semibold bg-white px-4 max-sm:px-2 max-sm:py-1 py-1 rounded-2xl;
+  }
+  .card-number {
+    @apply text-white;
   }
 }
 
