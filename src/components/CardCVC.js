@@ -1,12 +1,12 @@
-import { cvc } from "../contstants"
-import RepeatDot from "./RepeatDot"
+import CardCVCNumber from "./CardCVCNumber"
 
-const CardCVC = ({ showDetails }) => {
-    if (showDetails) {
-        return <div class="card-exp-label">{cvc}</div>
-    } else {
-        return <div class="card-exp-cvc"><RepeatDot quantity={3} /></div>
-    }
-}
+const CardCVC = ({ showDetails }) => <div class="card-exp-container">
+    <div class="card-exp-header">
+        CVC
+    </div>
+    <div class="card-exp-label">
+        <CardCVCNumber quantity={3} showDetails={showDetails} />
+    </div>
+</div>
 
-export default CardCVC;
+export default CardCVC
