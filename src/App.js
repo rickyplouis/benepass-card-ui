@@ -94,13 +94,13 @@ export default function App() {
           </div>
         </div>
         <div class="card-footer-container">
-          <div class="flex-1">
+          <div class="flex-1 ">
             <div class="card-zip text-lg">
               ZIP 66062
             </div>
           </div>
           <div class="w-14 max-sm:w-10">
-            <img class="w-full flex" src={visa} alt="Visa Logo" />
+            <img class="w-full flex mt-2" src={visa} alt="Visa Logo" />
           </div>
         </div>
 
@@ -114,9 +114,11 @@ export default function App() {
             onChange={() => setShowDetails(!showDetails)}
           />
         </div>
+        <div class="mt-0.5">
+          <ShowDetailsText showDetails={showDetails} />
 
-        <ShowDetailsText showDetails={showDetails} />
+        </div>
       </div>
-    </div>
+    </div >
   );
 }
