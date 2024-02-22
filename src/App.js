@@ -50,7 +50,7 @@ export default function App() {
 
   return (
     <div className="ui-container">
-      <h1>Flex Card</h1>
+      <h1 class="text-lg font-semibold">Flex Card</h1>
       <h2>Used for pre-tax purposes</h2>
       <div class="card">
         <div class="card-branding-container">
@@ -89,7 +89,7 @@ export default function App() {
           <div class="card-zip flex-1">
             ZIP 66062
           </div>
-          <div class="mt-2">
+          <div class="mt-2 w-12 max-sm:w-10">
             <img class="w-full flex" src={visa} alt="Visa Logo" />
 
           </div>
