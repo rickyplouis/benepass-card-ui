@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .card-container {
+    @apply bg-cover bg-center bg-[url('./cardBackground.png')] max-w-96 min-h-68 rounded-2xl mt-8;
+  }
+  .card-container-logo {
+    @apply max-w-98 min-h-68 pt-6 pl-3;
+  }
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
