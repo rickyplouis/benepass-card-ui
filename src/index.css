@@ -37,7 +37,7 @@
     @apply text-white font-medium mt-1;
   }
   .checkbox-container {
-    @apply mt-4 flex space-x-2;
+    @apply mt-4 flex space-x-4;
   }
   .styled-checkbox {
     @apply accent-benepass-red w-5 h-5 box-content rounded-3xl mt-1 pt-4;
