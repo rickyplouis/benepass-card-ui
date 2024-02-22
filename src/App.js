@@ -94,8 +94,10 @@ export default function App() {
           </div>
         </div>
         <div class="card-footer-container">
-          <div class="card-zip flex-1 text-lg">
-            ZIP 66062
+          <div class="flex-1">
+            <div class="card-zip text-lg">
+              ZIP 66062
+            </div>
           </div>
           <div class="w-14 max-sm:w-10">
             <img class="w-full flex" src={visa} alt="Visa Logo" />
