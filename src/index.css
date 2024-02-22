@@ -28,10 +28,25 @@
     @apply flex h-16 max-sm:h-12 mt-10 max-sm:mt-6;
   }
   .card-exp-header {
-    @apply text-white text-xs font-semibold;
+    @apply text-gray-200 text-xs font-semibold;
+  }
+  .card-exp-label {
+    @apply text-white font-bold;
+  }
+  .card-zip {
+    @apply text-white font-medium mt-1;
+  }
+  .checkbox-container {
+    @apply mt-4 flex space-x-2;
+  }
+  .styled-checkbox {
+    @apply accent-benepass-red w-4 rounded-2xl p-10;
   }
   .dot {
-    @apply h-2 w-2 bg-white rounded-2xl mt-3 max-sm:mt-2.5 mr-1.5 max-sm:mr-1.5;
+    @apply h-2 w-2 bg-white rounded-2xl mr-1.5 max-sm:mr-1.5;
+  }
+  .card-footer-container {
+    @apply flex;
   }
 }
 
