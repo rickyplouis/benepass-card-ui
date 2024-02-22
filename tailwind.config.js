@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       spacing: {
         '68': '17rem', // Corresponds to 272 px (height in figma)
-        '98': '24.5' // Corresponds to 392 px (width in figma)
+        '98': '24.5rem' // Corresponds to 392 px (width in figma)
       }
     },
   },
