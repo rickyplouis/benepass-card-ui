@@ -1,6 +1,5 @@
 
 import benepassLogo from './benepassLogo.svg';
-import circle from './circle.svg'
 
 export default function App() {
   return (
