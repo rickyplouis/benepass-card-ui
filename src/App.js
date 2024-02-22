@@ -58,8 +58,8 @@ export default function App() {
 
   return (
     <div className="ui-container">
-      <h1 class="text-lg font-semibold">Flex Card</h1>
-      <h2>Used for pre-tax purposes</h2>
+      <h1 class="text-xl font-semibold">Flex Card</h1>
+      <h2 class="text-lg">Used for pre-tax purposes</h2>
       <div class="card">
         <div class="card-branding-container">
           <div class="flex-1">
@@ -94,10 +94,10 @@ export default function App() {
           </div>
         </div>
         <div class="card-footer-container">
-          <div class="card-zip flex-1">
+          <div class="card-zip flex-1 text-lg">
             ZIP 66062
           </div>
-          <div class="mt-2 w-12 max-sm:w-10">
+          <div class="w-14 max-sm:w-10">
             <img class="w-full flex" src={visa} alt="Visa Logo" />
           </div>
         </div>
