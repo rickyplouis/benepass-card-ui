@@ -19,7 +19,7 @@
     @apply text-black font-semibold bg-white px-4 max-sm:px-2 max-sm:py-1 py-1 rounded-2xl;
   }
   .card-number {
-    @apply text-white text-3xl font-semibold;
+    @apply text-white text-3xl font-semibold max-sm:text-lg;
   }
 }
 
