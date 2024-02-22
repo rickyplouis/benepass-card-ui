@@ -2,12 +2,9 @@ import { useState } from "react";
 import benepassLogo from "./benepassLogo.svg";
 import visa from './Visa.svg'
 
-
 const fullCardNumber = '1232 2223 4432 1732';
 const finalFourDigits = '1732';
 const cvc = '345';
-
-
 
 const Dot = () => <div className="dot" />
 
@@ -21,6 +18,17 @@ const RepeatDot = ({ quantity }) => {
   </div>
 }
 
+const ShowDetailsText = ({ showDetails }) => {
+  if (showDetails) {
+    return <div class="font-bold text-benepass-red">
+      Show details
+    </div>
+  }
+  return <div class="font-light">
+    Show details
+  </div>
+
+}
 
 const CardNumber = ({ showDetails }) => {
   if (showDetails) {
@@ -91,22 +99,21 @@ export default function App() {
           </div>
           <div class="mt-2 w-12 max-sm:w-10">
             <img class="w-full flex" src={visa} alt="Visa Logo" />
-
           </div>
-
         </div>
 
       </div>
       <div class="checkbox-container">
-        <input
-          class="styled-checkbox"
-          type="checkbox"
-          checked={showDetails}
-          onChange={() => setShowDetails(!showDetails)}
-        />
-        <div class={`text-${showDetails ? 'benepass-red' : 'black'} font-medium`}>
-          Show details
+        <div>
+          <input
+            class="styled-checkbox"
+            type="checkbox"
+            checked={showDetails}
+            onChange={() => setShowDetails(!showDetails)}
+          />
         </div>
+
+        <ShowDetailsText showDetails={showDetails} />
       </div>
     </div>
   );
